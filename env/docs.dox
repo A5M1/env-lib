@@ -1,0 +1,51 @@
+/**
+ * @mainpage .env Loader Library
+ *
+ * @section intro_sec Introduction
+ * This library provides a simple loader for `.env` files, allowing you
+ * to read key/value pairs, query them, and optionally inject them into
+ * the process environment.
+ *
+ * @section usage_sec Usage
+ * 1. Call `env_load("path/to/.env")` to load environment variables.
+ * 2. Use `env_get("KEY")` to retrieve values.
+ * 3. Optionally, call `env_inject_all(1)` to inject variables into the system environment.
+ * 4. Free memory with `env_free()`.
+ *
+ * @section api_sec Public API
+ * The main functions exposed by this library are:
+ * - env_load()
+ * - env_get()
+ * - env_inject_all()
+ * - env_free()
+ *
+ * @section internals_sec Internal Members
+ * For developers, the following internal members are available:
+ * 
+ * - Structs:
+ *   - EnvEntry
+ * 
+ * - Static Helpers:
+ *   - xstrdup()
+ *   - trim_left()
+ *   - trim_right_inplace()
+ *   - trim()
+ *   - unquote_and_unescape_inplace()
+ *   - inject_single()
+ *
+ * @section example_sec Example
+ * ```c
+ * #include "env.h"
+ *
+ * int main() {
+ *     env_load(".env");
+ *     const char* val = env_get("MY_KEY");
+ *     env_inject_all(1);
+ *     env_free();
+ * }
+ * ```
+ *
+ * @section dev_notes Developer Notes
+ * Internal functions and the EnvEntry struct are documented for full
+ * developer visibility in the HTML docs.
+ */
