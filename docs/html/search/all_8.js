@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['notes_0',['Developer Notes',['../index.html#dev_notes',1,'']]]
+  ['public_20api_0',['Public API',['../index.html#api_sec',1,'']]]
 ];

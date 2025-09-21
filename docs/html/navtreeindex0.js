@@ -33,7 +33,6 @@ var NAVTREEINDEX0 =
 "index.html":[],
 "index.html":[0],
 "index.html#api_sec":[0,2],
-"index.html#dev_notes":[0,5],
 "index.html#example_sec":[0,4],
 "index.html#internals_sec":[0,3],
 "index.html#intro_sec":[0,0],

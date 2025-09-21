@@ -45,7 +45,4 @@
  * }
  * ```
  *
- * @section dev_notes Developer Notes
- * Internal functions and the EnvEntry struct are documented for full
- * developer visibility in the HTML docs.
  */
